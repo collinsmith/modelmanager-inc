@@ -15,4 +15,6 @@
  * NATIVES
  ******************************************************************************/
 
-//...
+native Model: mdl_registerModel();
+native Model: mdl_getModel();
+native Model: mdl_numModels();
