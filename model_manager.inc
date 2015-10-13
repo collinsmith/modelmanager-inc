@@ -31,6 +31,6 @@ native Trie:cs_registerModel(
  * NATIVES
  ******************************************************************************/
 
-native Model: mdl_registerModel();
-native PlayerModel: mdl_registerPlayerModel();
-native WeaponModel: mdl_registerWeaponModel();
+native Model: mdl_loadModel();
+native PlayerModel: mdl_loadPlayerModel();
+native WeaponModel: mdl_loadWeaponModel();
