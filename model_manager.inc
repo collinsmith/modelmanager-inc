@@ -31,6 +31,6 @@ native Trie:cs_registerModel(
  * NATIVES
  ******************************************************************************/
 
-native Model: mdl_loadModel();
-native PlayerModel: mdl_loadPlayerModel();
-native WeaponModel: mdl_loadWeaponModel();
+native Model: mdl_loadModel(const path[]);
+native PlayerModel: mdl_loadPlayerModel(const model[]);
+native WeaponModel: mdl_loadWeaponModel(const model[], const csi_const);
