@@ -5,9 +5,6 @@
 
 #pragma reqlib model_manager
 
-stock const MODEL_NAME[] = "model_name";
-stock const MODEL_PATH[] = "model_path";
-
 /**
  * @param name  unique name for this model
  * @param path  path to the model file
@@ -31,6 +28,6 @@ native Trie:cs_registerModel(
  * NATIVES
  ******************************************************************************/
 
-native Model: mdl_loadModel(const path[]);
-native PlayerModel: mdl_loadPlayerModel(const model[]);
-native WeaponModel: mdl_loadWeaponModel(const model[], const csi_const);
+native Trie: mdl_loadModel(&Trie: trie = Invalid_Trie, const path[]);
+native Trie: mdl_loadPlayerModel(&Trie: trie = Invalid_Trie, const model[]);
+native Trie: mdl_loadWeaponModel(&Trie: trie = Invalid_Trie, const model[], const csiConst);
